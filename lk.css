@@ -1,0 +1,97 @@
+body {
+    font-family: 'Bahnschrift Condensed', sans-serif;
+    background: linear-gradient(135deg, #c3deff, #5e79da);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+main {
+    padding: 20px;
+}
+
+.profile {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.user-info, .class-selection, .notifications, .recommendations {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.user-info h2, .class-selection h2, .notifications h2, .recommendations h2 {
+    margin-top: 0;
+}
+
+.class-selection select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+}
+
+.animated-button {
+    background-color: #6180b0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.animated-button:hover {
+    background-color: #4a6a9b;
+    transform: scale(1.1);
+}
+
+.notifications label {
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.recommendations ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recommendations ul li {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}

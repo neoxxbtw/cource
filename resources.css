@@ -9,6 +9,8 @@ body {
 header {
     background: rgba(255, 255, 255, 0.1);
     padding: 10px 0;
+    z-index: 100;
+    position: relative;
 }
 
 nav ul {
@@ -41,22 +43,30 @@ main {
     text-align: center;
 }
 
-.resource-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 .resource-item {
     background: rgba(255, 255, 255, 0.1);
-    margin: 10px;
+    margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
-    width: 300px;
+    width: 80%;
+    max-width: 800px;
 }
 
 .resource-item h2 {
     margin-top: 0;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 30%; /* Размер изображений */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover; /* Чтобы изображения сохраняли пропорции */
 }
 
 .animated-button {

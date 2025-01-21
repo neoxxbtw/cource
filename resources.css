@@ -68,8 +68,8 @@ main {
 }
 
 .book img {
-    width: 100%; /* Изображение занимает всю ширину контейнера */
-    height: auto;
+    width: 200px; /* Фиксированная ширина изображения */
+    height: 250px; /* Фиксированная высота изображения */
     border-radius: 10px;
     object-fit: cover; /* Сохранение пропорций */
 }
@@ -85,7 +85,7 @@ main {
     transition: background-color 0.3s ease, transform 0.3s ease;
     display: block;
     margin: 10px auto;
-    width: 100%; /* Кнопка занимает всю ширину контейнера */
+    width: 200px; /* Ширина кнопки равна ширине изображения */
     text-align: center;
     text-decoration: none;
 }

@@ -62,11 +62,16 @@ main {
     margin-bottom: 20px;
 }
 
-.image-container img {
-    width: 30%; /* Размер изображений */
+.book {
+    width: 30%; /* Ширина каждого учебника */
+    text-align: center;
+}
+
+.book img {
+    width: 100%; /* Изображение занимает всю ширину контейнера */
     height: auto;
     border-radius: 10px;
-    object-fit: cover; /* Чтобы изображения сохраняли пропорции */
+    object-fit: cover; /* Сохранение пропорций */
 }
 
 .animated-button {
@@ -75,12 +80,17 @@ main {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    display: block;
+    margin: 10px auto;
+    width: 100%; /* Кнопка занимает всю ширину контейнера */
+    text-align: center;
+    text-decoration: none;
 }
 
 .animated-button:hover {
     background-color: #4a6a9b;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }

@@ -62,22 +62,34 @@ nav ul li a {
 nav ul li a:hover {
     color: #ffcc00;
 }
+
 main {
     padding: 20px;
 }
 
 .registration {
+    max-width: 400px;
+    margin: 0 auto;
     text-align: center;
 }
 
+.registration h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
 .registration form {
-    display: inline-block;
-    text-align: left;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .registration label {
     display: block;
     margin: 10px 0 5px;
+    font-size: 1.1em;
+    text-align: left;
 }
 
 .registration input {
@@ -86,12 +98,27 @@ main {
     margin-bottom: 10px;
     border: none;
     border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.registration input:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .animated-button {
     background-color: #6180b0;
     color: white;
     padding: 10px 20px;
+    margin-top: 10px;
     border: none;
     border-radius: 5px;
     font-size: 18px;
@@ -101,9 +128,8 @@ main {
 
 .animated-button:hover {
     background-color: #4a6a9b;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
-
 
 footer {
     background: rgba(0, 0, 0, 0.2);

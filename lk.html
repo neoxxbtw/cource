@@ -17,62 +17,58 @@
             </ul>
         </nav>
         <h1>MathMaster</h1>
-            <p>Улучшайте свои знания в математике!</p>
+        <p>Улучшайте свои знания в математике!</p>
     </header>
 
     <main>
         <section class="profile">
             <h1>Личный кабинет</h1>
 
-            <!-- Информация о пользователе -->
-            <div class="user-info">
-                <h2>Ваши данные:</h2>
-                <p><strong>Имя:</strong> <span id="username">Иван Иванов</span></p>
-                <p><strong>Email:</strong> <span id="email">ivan@gmail.com</span></p>
-            </div>
+            <!-- Объединенная секция: данные пользователя и выбор класса -->
+            <div class="user-section">
+                <div class="user-info">
+                    <h2>Ваши данные:</h2>
+                    <p><strong>Имя:</strong> <span id="username">Иван Иванов</span></p>
+                    <p><strong>Email:</strong> <span id="email">ivan@gmail.com</span></p>
+                </div>
 
-            <!-- Выбор класса -->
-            <div class="class-selection">
-                <h2>Выберите ваш класс:</h2>
-                <select id="class-select">
-                    <option value="5">5 класс</option>
-                    <option value="6">6 класс</option>
-                    <option value="7">7 класс</option>
-                    <option value="8">8 класс</option>
-                    <option value="9">9 класс</option>
-                    <option value="10">10 класс</option>
-                    <option value="11">11 класс</option>
-                </select>
-                <button id="save-class" class="animated-button">Сохранить</button>
-            </div>
-
-            <!-- Уведомления -->
-            <div class="notifications">
-                <h2>Уведомления:</h2>
-                <label>
-                    <input type="checkbox" id="notify-tasks" checked>
-                    Получать уведомления о новых задачах
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" id="notify-materials" checked>
-                    Получать уведомления о новых учебных материалах
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" id="notify-reminders" checked>
-                    Получать напоминания о тренировках
-                </label>
+                <div class="class-selection">
+                    <h2>Выберите ваш класс:</h2>
+                    <select id="class-select">
+                        <option value="5">5 класс</option>
+                        <option value="6">6 класс</option>
+                        <option value="7">7 класс</option>
+                        <option value="8">8 класс</option>
+                        <option value="9">9 класс</option>
+                        <option value="10">10 класс</option>
+                        <option value="11">11 класс</option>
+                    </select>
+                    <button id="save-class" class="animated-button">Сохранить</button>
+                </div>
             </div>
 
             <!-- Персонализированные рекомендации -->
             <div class="recommendations">
                 <h2>Рекомендации для вас:</h2>
                 <ul id="recommendations-list">
-                    <li>Задачи по алгебре для 7 класса</li>
-                    <li>Учебник по геометрии для 7 класса</li>
-                    <li>Тренажер для подготовки к ОГЭ</li>
+                    <li><a href="resources.html#math-5">Математический тренажер для 5 класса (В.И. Жохов)</a></li>
+                    <li><a href="resources.html#math-5">Математический тренажер для 5 класса (Е.Г. Коннова)</a></li>
+                    <li><a href="resources.html#math-5">Комбинированные летние задания (М.А. Антонова)</a></li>
                 </ul>
+            </div>
+
+            <!-- Уведомления -->
+            <div class="notifications">
+                <h2>Уведомления:</h2>
+                <label>
+                    <input type="checkbox" id="notify-materials" checked>
+                    Получать уведомления о новых учебных материалах
+                </label>
+                <label>
+                    <input type="checkbox" id="notify-reminders" checked>
+                    Получать напоминания о тренировках
+                </label>
+                <button id="save-class" class="animated-button">Сохранить</button>
             </div>
         </section>
     </main>
@@ -90,6 +86,5 @@
             </div>
         </div>
     </footer>
-
 </body>
 </html>

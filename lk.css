@@ -67,20 +67,33 @@ main {
     padding: 20px;
 }
 
+section h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
 .profile {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
 }
 
-.user-info, .class-selection, .notifications, .recommendations {
+/* Объединенная секция: данные пользователя и выбор класса */
+.user-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
-.user-info h2, .class-selection h2, .notifications h2, .recommendations h2 {
+.user-info, .class-selection {
+    flex: 1;
+}
+
+.user-info h2, .class-selection h2 {
     margin-top: 0;
 }
 
@@ -108,10 +121,12 @@ main {
     transform: scale(1.1);
 }
 
-.notifications label {
-    display: block;
-    margin: 10px 0;
-    font-size: 18px;
+/* Стили для рекомендаций */
+.recommendations {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .recommendations ul {
@@ -126,6 +141,30 @@ main {
     border-radius: 5px;
 }
 
+.recommendations ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.recommendations ul li a:hover {
+    color: #4a6a9b;
+}
+
+/* Стили для уведомлений */
+.notifications {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.notifications label {
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+}
 
 footer {
     background: rgba(0, 0, 0, 0.2);

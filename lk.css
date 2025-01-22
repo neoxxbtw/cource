@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 html {
     scroll-behavior: smooth;
   }
@@ -5,9 +8,6 @@ html {
   * {
     box-sizing: border-box;
   }
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 
 body {
     font-family: "Inter", sans-serif;
@@ -60,7 +60,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffcc00;
+    color: #90ffa2;
 }
 
 main {
@@ -164,6 +164,7 @@ section h1 {
     display: block;
     margin: 10px 0;
     font-size: 18px;
+    padding: 10px;
 }
 
 footer {

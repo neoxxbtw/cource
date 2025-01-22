@@ -1,6 +1,19 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 body {
-    font-family: 'Bahnschrift Condensed', sans-serif;
-    background: linear-gradient(135deg, #c3deff, #5e79da);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background: linear-gradient(135deg, #8bbfff, #5e79da);
     color: white;
     margin: 0;
     padding: 0;
@@ -9,13 +22,30 @@ body {
 header {
     background: rgba(255, 255, 255, 0.1);
     padding: 10px 0;
+    margin: auto;
+    position: relative;
+    text-align: center;
+}
+
+header h1{
+    font-size: 5.5em;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+header p{
+    font-size: 1.5em;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 nav ul {
+    font-size: 1em;
     list-style: none;
     display: flex;
     justify-content: center;
     padding: 0;
+
 }
 
 nav ul li {
@@ -32,7 +62,6 @@ nav ul li a {
 nav ul li a:hover {
     color: #ffcc00;
 }
-
 main {
     padding: 20px;
 }
@@ -73,4 +102,63 @@ main {
 .animated-button:hover {
     background-color: #4a6a9b;
     transform: scale(1.1);
+}
+
+
+footer {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.social-links {
+    text-align: right;
+    display: flex;
+    align-items: center;
+}
+
+.social-links ul {
+    list-style: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+    margin: 0; /* Убираем отступы */
+}
+
+.social-links ul li {
+    display: inline-block; /* Элементы списка в строку */
+    margin: 0 10px; /* Отступы между иконками */
+}
+
+li::marker {
+    display: none; /* Убирает маркеры */
+    font-size: 0px;
+}
+
+.social-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px; /* Размер иконок */
+    transition: color 0.3s ease;
+}
+
+.social-links img {
+    width: 100%; /* Размер иконок */
+    transition: opacity 0.3s ease;
+}
+
+.social-links img:hover {
+    opacity: 0.7; /* Эффект при наведении */
 }

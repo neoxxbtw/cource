@@ -137,7 +137,6 @@ footer {
     background: rgba(0, 0, 0, 0.2);
     padding: 20px;
     text-align: center;
-    margin-top: 40px;
     color: white;
 }
 
@@ -299,4 +298,105 @@ li::marker {
     .footer-content {
         justify-content: space-around; /* Оригинальное расположение футера */
     }
+}
+
+/* Темная тема */
+#theme-toggle:checked ~ body {
+    background: #000000; /* Темный фон для основной части страницы */
+}
+
+#theme-toggle:checked ~ main {
+    background: #1e1e1e; /* Темный фон для основной части страницы */
+    color: #ffffff; /* Белый текст */
+}
+
+
+#theme-toggle:checked ~ header,
+#theme-toggle:checked ~ footer {
+    background: #000000; /* Черный фон для шапки и подвала */
+    color: #ffffff; /* Белый текст */
+}
+
+#theme-toggle:checked ~ header h1,
+#theme-toggle:checked ~ header p,
+#theme-toggle:checked ~ footer p,
+#theme-toggle:checked ~ footer a,
+#theme-toggle:checked ~ header a {
+    color: #ffffff; /* Белый цвет для текста в шапке и подвале */
+}
+
+#theme-toggle:checked ~ main h1,
+#theme-toggle:checked ~ main h2,
+#theme-toggle:checked ~ main h3,
+#theme-toggle:checked ~ main p {
+    color: #ffffff; /* Белый цвет для заголовков и текста в основной части */
+}
+
+#theme-toggle:checked ~ main .resource-item {
+    background: #2d2d2d; /* Темный фон для карточек с учебниками */
+    color: #ffffff; /* Белый текст */
+}
+
+#theme-toggle:checked ~ main .resource-item h2 {
+    color: #ffffff; /* Белый цвет для заголовков карточек */
+}
+
+#theme-toggle:checked ~ main .book img {
+    filter: brightness(0.8); /* Уменьшаем яркость изображений */
+}
+
+#theme-toggle:checked ~ main .animated-button {
+    background: linear-gradient(45deg, #555, #333); /* Темный градиент для кнопок */
+    color: #ffffff; /* Белый текст */
+}
+
+#theme-toggle:checked ~ main .animated-button:hover {
+    background: linear-gradient(45deg, #777, #555); /* Темный градиент при наведении */
+}
+
+#theme-toggle:checked ~ footer {
+    background: #000000; /* Черный фон для подвала */
+    color: #ffffff; /* Белый текст */
+}
+
+#theme-toggle:checked ~ footer .social-links img {
+    filter: brightness(0.8); /* Уменьшаем яркость иконок соцсетей */
+}
+
+#theme-toggle:checked ~ footer .social-links img:hover {
+    filter: brightness(1); /* Возвращаем яркость при наведении */
+}
+
+/* Стили для переключателя темы */
+.theme-switcher {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.theme-switcher:hover {
+    background: rgba(255, 255, 255, 0.2); /* Легкое затемнение при наведении */
+}
+
+#theme-toggle {
+    display: none;
+}
+
+#theme-toggle + span {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#theme-toggle:checked + span {
+    background-color: #4a6a9b; /* Цвет фона при активной темной теме */
 }

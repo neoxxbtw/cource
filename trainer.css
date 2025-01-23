@@ -1,17 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 html {
     scroll-behavior: smooth;
-  }
-  
-  * {
+}
+
+* {
     box-sizing: border-box;
-  }
+}
 
 body {
     font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
     font-style: normal;
     background: linear-gradient(135deg, #8bbfff, #5e79da);
     color: white;
@@ -27,13 +25,13 @@ header {
     text-align: center;
 }
 
-header h1{
+header h1 {
     font-size: 5.5em;
     margin-top: 7px;
     margin-bottom: 7px;
 }
 
-header p{
+header p {
     font-size: 1.5em;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -45,7 +43,6 @@ nav ul {
     display: flex;
     justify-content: center;
     padding: 0;
-
 }
 
 nav ul li {
@@ -63,7 +60,6 @@ nav ul li a:hover {
     color: #90ffa2;
 }
 
-/* Стили для main */
 main {
     padding: 20px;
 }
@@ -93,10 +89,10 @@ main {
 }
 
 .images img {
-    width: 390px; /* Фиксированная ширина изображений */
-    height: 270px; /* Фиксированная высота изображений */
-    object-fit: unset; /* Сохранение пропорций */
-    border-radius: 10px; /* Скругленные углы */
+    width: 390px;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .button-container {
@@ -123,7 +119,6 @@ main {
     transform: scale(1.05);
 }
 
-
 footer {
     background: rgba(0, 0, 0, 0.2);
     padding: 20px;
@@ -136,7 +131,6 @@ footer {
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
-
 }
 
 .contact-info {
@@ -150,162 +144,154 @@ footer {
 }
 
 .social-links ul {
-    list-style: none; /* Убираем маркеры списка */
-    padding: 0; /* Убираем отступы */
-    margin: 0; /* Убираем отступы */
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .social-links ul li {
-    display: inline-block; /* Элементы списка в строку */
-    margin: 0 10px; /* Отступы между иконками */
-}
-
-li::marker {
-    display: none; /* Убирает маркеры */
-    font-size: 0px;
+    display: inline-block;
+    margin: 0 10px;
 }
 
 .social-links ul li a {
     color: white;
     text-decoration: none;
-    font-size: 24px; /* Размер иконок */
+    font-size: 24px;
     transition: color 0.3s ease;
 }
 
 .social-links img {
-    width: 100%; /* Размер иконок */
+    width: 100%;
     transition: opacity 0.3s ease;
 }
 
 .social-links img:hover {
-    opacity: 0.7; /* Эффект при наведении */
+    opacity: 0.7;
 }
 
 @media (max-width: 768px) {
     header h1 {
-        font-size: 3em; /* Уменьшаем размер заголовка */
+        font-size: 3em;
     }
 
     header p {
-        font-size: 1.2em; /* Уменьшаем размер текста */
+        font-size: 1.2em;
     }
 
     nav ul {
-        flex-direction: column; /* Меняем направление навигации на вертикальное */
+        flex-direction: column;
     }
 
     nav ul li {
-        margin: 10px 0; /* Увеличиваем отступы между пунктами меню */
+        margin: 10px 0;
     }
 
     .trainer {
-        padding: 0 10px; /* Добавляем отступы по бокам */
+        padding: 0 10px;
     }
 
     .trainer h1 {
-        font-size: 1.8em; /* Уменьшаем размер заголовка */
+        font-size: 1.8em;
     }
 
     .trainer p {
-        font-size: 1em; /* Уменьшаем размер текста */
+        font-size: 1em;
     }
 
     .images {
-        flex-direction: column; /* Меняем направление на вертикальное */
-        align-items: center; /* Центрируем изображения */
+        flex-direction: column;
+        align-items: center;
     }
 
     .images img {
-        width: 100%; /* Изображение занимает всю ширину экрана */
-        height: auto; /* Автоматическая высота */
-        margin-bottom: 20px; /* Отступ между изображениями */
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
     }
 
     .button-container {
-        flex-direction: column; /* Кнопки в столбик */
-        gap: 10px; /* Уменьшаем отступы между кнопками */
+        flex-direction: column;
+        gap: 10px;
     }
 
     .animated-button {
-        width: 100%; /* Кнопка занимает всю ширину */
+        width: 100%;
     }
 
     .footer-content {
-        flex-direction: column; /* Меняем направление футера на вертикальное */
+        flex-direction: column;
         text-align: center;
     }
 
     .contact-info, .social-links {
-        text-align: center; /* Центрируем текст в футере */
+        text-align: center;
     }
 
     .social-links {
-        justify-content: center; /* Центрируем иконки соцсетей */
+        justify-content: center;
     }
 }
 
-/* Для планшетов (от 768px до 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
     header h1 {
-        font-size: 4em; /* Средний размер заголовка */
+        font-size: 4em;
     }
 
     header p {
-        font-size: 1.3em; /* Средний размер текста */
+        font-size: 1.3em;
     }
 
     .trainer {
-        max-width: 90%; /* Увеличиваем ширину блока */
+        max-width: 90%;
     }
 
     .images img {
-        width: 45%; /* Уменьшаем ширину изображений */
-        height: auto; /* Автоматическая высота */
+        width: 45%;
+        height: auto;
     }
 
     .footer-content {
-        gap: 10px; /* Уменьшаем отступы между блоками */
+        gap: 10px;
     }
 }
 
-/* Для десктопов (от 1024px и выше) */
 @media (min-width: 1024px) {
     header h1 {
-        font-size: 5.5em; /* Оригинальный размер заголовка */
+        font-size: 5.5em;
     }
 
     header p {
-        font-size: 1.5em; /* Оригинальный размер текста */
+        font-size: 1.5em;
     }
 
     .trainer {
-        max-width: 800px; /* Оригинальная ширина блока */
+        max-width: 800px;
     }
 
     .images img {
-        width: 390px; /* Оригинальные размеры изображения */
+        width: 390px;
         height: 270px;
     }
 
     .footer-content {
-        justify-content: space-around; /* Оригинальное расположение футера */
+        justify-content: space-around;
     }
 }
 
-/* Темная тема */
 #theme-toggle:checked ~ body {
-    background: #1e1e1e; /* Темный фон для тела страницы */
+    background: #1e1e1e;
 }
 
 #theme-toggle:checked ~ main {
-    background: #1e1e1e; /* Темный фон для основной части страницы */
-    color: #ffffff; /* Белый текст */
+    background: #1e1e1e;
+    color: #ffffff;
 }
 
 #theme-toggle:checked ~ header,
 #theme-toggle:checked ~ footer {
-    background: #000000; /* Черный фон для шапки и подвала */
-    color: #ffffff; /* Белый текст */
+    background: #000000;
+    color: #ffffff;
 }
 
 #theme-toggle:checked ~ header h1,
@@ -313,48 +299,47 @@ li::marker {
 #theme-toggle:checked ~ footer p,
 #theme-toggle:checked ~ footer a,
 #theme-toggle:checked ~ header a {
-    color: #ffffff; /* Белый цвет для текста в шапке и подвале */
+    color: #ffffff;
 }
 
 #theme-toggle:checked ~ main h1,
 #theme-toggle:checked ~ main h2,
 #theme-toggle:checked ~ main h3,
 #theme-toggle:checked ~ main p {
-    color: #ffffff; /* Белый цвет для заголовков и текста в основной части */
+    color: #ffffff;
 }
 
 #theme-toggle:checked ~ main .trainer {
-    background: #2d2d2d; /* Темный фон для секции тренажера */
-    color: #ffffff; /* Белый текст */
+    background: #2d2d2d;
+    color: #ffffff;
 }
 
 #theme-toggle:checked ~ main .images img {
-    filter: brightness(0.8); /* Уменьшаем яркость изображений */
+    filter: brightness(0.8);
 }
 
 #theme-toggle:checked ~ main .animated-button {
-    background: linear-gradient(45deg, #555, #333); /* Темный градиент для кнопок */
-    color: #ffffff; /* Белый текст */
+    background: linear-gradient(45deg, #555, #333);
+    color: #ffffff;
 }
 
 #theme-toggle:checked ~ main .animated-button:hover {
-    background: linear-gradient(45deg, #777, #555); /* Темный градиент при наведении */
+    background: linear-gradient(45deg, #777, #555);
 }
 
 #theme-toggle:checked ~ footer {
-    background: #000000; /* Черный фон для подвала */
-    color: #ffffff; /* Белый текст */
+    background: #000000;
+    color: #ffffff;
 }
 
 #theme-toggle:checked ~ footer .social-links img {
-    filter: brightness(0.8); /* Уменьшаем яркость иконок соцсетей */
+    filter: brightness(0.8);
 }
 
 #theme-toggle:checked ~ footer .social-links img:hover {
-    filter: brightness(1); /* Возвращаем яркость при наведении */
+    filter: brightness(1);
 }
 
-/* Стили для переключателя темы */
 .theme-switcher {
     position: fixed;
     top: 20px;
@@ -370,7 +355,7 @@ li::marker {
 }
 
 .theme-switcher:hover {
-    background: rgba(255, 255, 255, 0.2); /* Легкое затемнение при наведении */
+    background: rgba(255, 255, 255, 0.2);
 }
 
 #theme-toggle {
@@ -385,5 +370,5 @@ li::marker {
 }
 
 #theme-toggle:checked + span {
-    background-color: #4a6a9b; /* Цвет фона при активной темной теме */
+    background-color: #4a6a9b;
 }

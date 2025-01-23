@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,18 +28,17 @@
 
     <main>
         <section class="profile">
-            <h1>Личный кабинет</h1>
+            <h2>Личный кабинет</h2>
 
-            <!-- Объединенная секция: данные пользователя и выбор класса -->
             <div class="user-section">
                 <div class="user-info">
-                    <h2>Ваши данные:</h2>
+                    <h3>Ваши данные:</h3>
                     <p><strong>Имя:</strong> <span id="username">Иван Иванов</span></p>
                     <p><strong>Email:</strong> <span id="email">ivan@gmail.com</span></p>
                 </div>
 
                 <div class="class-selection">
-                    <h2>Выберите ваш класс:</h2>
+                    <h3>Выберите ваш класс:</h3>
                     <select id="class-select">
                         <option value="5">5 класс</option>
                         <option value="6">6 класс</option>
@@ -53,9 +52,8 @@
                 </div>
             </div>
 
-            <!-- Персонализированные рекомендации -->
             <div class="recommendations">
-                <h2>Рекомендации для вас:</h2>
+                <h3>Рекомендации для вас:</h3>
                 <ul id="recommendations-list">
                     <li><a href="resources.html#math-5">Математический тренажер для 5 класса (В.И. Жохов)</a></li>
                     <li><a href="resources.html#math-5">Математический тренажер для 5 класса (Е.Г. Коннова)</a></li>
@@ -63,9 +61,8 @@
                 </ul>
             </div>
 
-            <!-- Уведомления -->
             <div class="notifications">
-                <h2>Уведомления:</h2>
+                <h3>Уведомления:</h3>
                 <label>
                     <input type="checkbox" id="notify-materials" checked>
                     Получать уведомления о новых учебных материалах
@@ -74,7 +71,7 @@
                     <input type="checkbox" id="notify-reminders" checked>
                     Получать напоминания о тренировках
                 </label>
-                <button id="save-class" class="animated-button">Сохранить</button>
+                <button class="animated-button">Сохранить настройки</button>
             </div>
         </section>
     </main>
@@ -86,9 +83,11 @@
                 <p>Телефон: +7 (903) 972-90-02</p>
             </div>
             <div class="social-links">
-                <li><a href="https://t.me/neoxxbtw" target="_blank"> <img src="telegram.svg" alt="Telegram"></a></li>
-                <li><a href="https://vk.com/neoxxbtw" target="_blank"><img src="vk.svg" alt="VK"></a></li>
-                <li><a href="https://github.com/neoxxbtw" target="_blank"><img src="git.svg" alt="Git"></a></li>
+                <ul>
+                    <li><a href="https://t.me/neoxxbtw" target="_blank"> <img src="telegram.svg" alt="Telegram"></a></li>
+                    <li><a href="https://vk.com/neoxxbtw" target="_blank"><img src="vk.svg" alt="VK"></a></li>
+                    <li><a href="https://github.com/neoxxbtw" target="_blank"><img src="git.svg" alt="Git"></a></li>
+                </ul>
             </div>
         </div>
     </footer>

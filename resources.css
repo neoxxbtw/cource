@@ -11,7 +11,6 @@ html {
 
 body {
     font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
     font-style: normal;
     background: linear-gradient(135deg, #8bbfff, #5e79da);
     color: white;
@@ -201,6 +200,14 @@ iframe {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Тень */
     aspect-ratio: 16 / 9;
 }
+
+.iframe-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+
 
 @media (max-width: 768px) {
     header h1 {

@@ -12,7 +12,6 @@ html {
 
 body {
     font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
     font-style: normal;
     background: linear-gradient(135deg, #8bbfff, #5e79da);
     color: white;

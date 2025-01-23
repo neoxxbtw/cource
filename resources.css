@@ -97,13 +97,18 @@ main {
 .book {
     width: 30%; /* Ширина каждого учебника */
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .book img {
     width: 200px; /* Фиксированная ширина изображения */
     height: 250px; /* Фиксированная высота изображения */
     border-radius: 10px;
-    object-fit: cover; /* Сохранение пропорций */
+    transition: transform 0.3s ease; /* Плавное увеличение */
+}
+
+.book img:hover {
+    transform: scale(1.1); /* Увеличение на 10% */
 }
 
 .animated-button {

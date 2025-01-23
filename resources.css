@@ -190,6 +190,18 @@ li::marker {
     opacity: 0.7; /* Эффект при наведении */
 }
 
+.video-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+iframe {
+    max-width: 800px; /* Ограничиваем ширину видео */
+    border-radius: 10px; /* Скругленные углы */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Тень */
+    aspect-ratio: 16 / 9;
+}
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 3em; /* Уменьшаем размер заголовка */

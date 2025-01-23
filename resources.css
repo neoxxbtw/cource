@@ -185,3 +185,113 @@ li::marker {
 .social-links img:hover {
     opacity: 0.7; /* Эффект при наведении */
 }
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 3em; /* Уменьшаем размер заголовка */
+    }
+
+    header p {
+        font-size: 1.2em; /* Уменьшаем размер текста */
+    }
+
+    nav ul {
+        flex-direction: column; /* Меняем направление навигации на вертикальное */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Увеличиваем отступы между пунктами меню */
+    }
+
+    .resource-item {
+        padding: 15px; /* Уменьшаем отступы внутри блока */
+    }
+
+    .image-container {
+        flex-direction: column; /* Меняем направление на вертикальное */
+        align-items: center; /* Центрируем элементы */
+    }
+
+    .book {
+        width: 80%; /* Увеличиваем ширину учебника */
+        margin-bottom: 20px; /* Добавляем отступ между учебниками */
+    }
+
+    .book img {
+        width: 100%; /* Изображение занимает всю ширину блока */
+        height: auto; /* Автоматическая высота */
+    }
+
+    .animated-button {
+        width: 100%; /* Кнопка занимает всю ширину */
+    }
+
+    .footer-content {
+        flex-direction: column; /* Меняем направление футера на вертикальное */
+        text-align: center;
+    }
+
+    .contact-info, .social-links {
+        text-align: center; /* Центрируем текст в футере */
+    }
+
+    .social-links {
+        justify-content: center; /* Центрируем иконки соцсетей */
+    }
+}
+
+/* Для планшетов (от 768px до 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    header h1 {
+        font-size: 4em; /* Средний размер заголовка */
+    }
+
+    header p {
+        font-size: 1.3em; /* Средний размер текста */
+    }
+
+    .resource-item {
+        max-width: 90%; /* Увеличиваем ширину блока */
+    }
+
+    .book {
+        width: 45%; /* Уменьшаем ширину учебника */
+    }
+
+    .book img {
+        width: 100%; /* Изображение занимает всю ширину блока */
+        height: auto; /* Автоматическая высота */
+    }
+
+    .footer-content {
+        gap: 10px; /* Уменьшаем отступы между блоками */
+    }
+}
+
+/* Для десктопов (от 1024px и выше) */
+@media (min-width: 1024px) {
+    header h1 {
+        font-size: 5.5em; /* Оригинальный размер заголовка */
+    }
+
+    header p {
+        font-size: 1.5em; /* Оригинальный размер текста */
+    }
+
+    .resource-item {
+        max-width: 800px; /* Оригинальная ширина блока */
+    }
+
+    .book {
+        width: 30%; /* Оригинальная ширина учебника */
+    }
+
+    .book img {
+        width: 200px; /* Оригинальные размеры изображения */
+        height: 250px;
+    }
+
+    .footer-content {
+        justify-content: space-around; /* Оригинальное расположение футера */
+    }
+}

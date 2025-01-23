@@ -181,3 +181,114 @@ li::marker {
 .social-links img:hover {
     opacity: 0.7; /* Эффект при наведении */
 }
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 3em; /* Уменьшаем размер заголовка */
+    }
+
+    header p {
+        font-size: 1.2em; /* Уменьшаем размер текста */
+    }
+
+    nav ul {
+        flex-direction: column; /* Меняем направление навигации на вертикальное */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Увеличиваем отступы между пунктами меню */
+    }
+
+    .trainer {
+        padding: 0 10px; /* Добавляем отступы по бокам */
+    }
+
+    .trainer h1 {
+        font-size: 1.8em; /* Уменьшаем размер заголовка */
+    }
+
+    .trainer p {
+        font-size: 1em; /* Уменьшаем размер текста */
+    }
+
+    .images {
+        flex-direction: column; /* Меняем направление на вертикальное */
+        align-items: center; /* Центрируем изображения */
+    }
+
+    .images img {
+        width: 100%; /* Изображение занимает всю ширину экрана */
+        height: auto; /* Автоматическая высота */
+        margin-bottom: 20px; /* Отступ между изображениями */
+    }
+
+    .button-container {
+        flex-direction: column; /* Кнопки в столбик */
+        gap: 10px; /* Уменьшаем отступы между кнопками */
+    }
+
+    .animated-button {
+        width: 100%; /* Кнопка занимает всю ширину */
+    }
+
+    .footer-content {
+        flex-direction: column; /* Меняем направление футера на вертикальное */
+        text-align: center;
+    }
+
+    .contact-info, .social-links {
+        text-align: center; /* Центрируем текст в футере */
+    }
+
+    .social-links {
+        justify-content: center; /* Центрируем иконки соцсетей */
+    }
+}
+
+/* Для планшетов (от 768px до 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    header h1 {
+        font-size: 4em; /* Средний размер заголовка */
+    }
+
+    header p {
+        font-size: 1.3em; /* Средний размер текста */
+    }
+
+    .trainer {
+        max-width: 90%; /* Увеличиваем ширину блока */
+    }
+
+    .images img {
+        width: 45%; /* Уменьшаем ширину изображений */
+        height: auto; /* Автоматическая высота */
+    }
+
+    .footer-content {
+        gap: 10px; /* Уменьшаем отступы между блоками */
+    }
+}
+
+/* Для десктопов (от 1024px и выше) */
+@media (min-width: 1024px) {
+    header h1 {
+        font-size: 5.5em; /* Оригинальный размер заголовка */
+    }
+
+    header p {
+        font-size: 1.5em; /* Оригинальный размер текста */
+    }
+
+    .trainer {
+        max-width: 800px; /* Оригинальная ширина блока */
+    }
+
+    .images img {
+        width: 390px; /* Оригинальные размеры изображения */
+        height: 270px;
+    }
+
+    .footer-content {
+        justify-content: space-around; /* Оригинальное расположение футера */
+    }
+}
